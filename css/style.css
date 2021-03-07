@@ -502,6 +502,7 @@ button {
 .address-link.opacity06:focus {
   color: var(--main-color-blue);
 }
+
 .footer .title {
   display: block;
   font-weight: 700;
