@@ -1,0 +1,12 @@
+body {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+.container {
+  $gaps: 15px;
+  width: 1170px + $gaps * 2;
+  padding-left: $gaps;
+  padding-right: $gaps;
+  margin: 0 auto;
+}
