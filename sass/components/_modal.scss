@@ -97,11 +97,6 @@
 
     outline: $main-color-blue;
   }
-
-  &:hover + .modal__icon,
-  &:focus + .modal__icon {
-    color: $main-color-blue;
-  }
 }
 
 .modal__icon {
@@ -114,6 +109,11 @@
   fill: currentColor;
 
   transition: color 250ms $transition-type;
+
+  .modal__input:hover + &,
+  .modal__input:focus + & {
+    color: $main-color-blue;
+  }
 }
 
 .modal__comment {
@@ -149,17 +149,6 @@
   width: 0;
   height: 0;
   opacity: 0;
-
-  &:hover + .icon-wrapper,
-  &:focus + .icon-wrapper {
-    color: $main-color-blue;
-  }
-
-  &:checked + .icon-wrapper .terms__icon--unchecked,
-  &:not(:checked) + .icon-wrapper .terms__icon--checked {
-    opacity: 0;
-    pointer-events: none;
-  }
 }
 
 .icon-wrapper {
@@ -172,6 +161,11 @@
   color: $main-color-darkgrey;
 
   transition: color 250ms $transition-type;
+
+  .terms__check:hover + &,
+  .terms__check:focus + & {
+    color: $main-color-blue;
+  }
 }
 
 .terms__icon {
@@ -182,6 +176,20 @@
 
   transition: opacity 250ms $transition-type;
 }
+
+.terms__icon--unchecked {
+  .terms__check:checked + .icon-wrapper & {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.terms__icon--checked {
+  .terms__check:not(:checked) + .icon-wrapper & {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 .terms__txt {
   color: $main-color-lightgrey;
   line-height: 1.53;
