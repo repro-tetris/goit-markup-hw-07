@@ -159,6 +159,7 @@
 
   .terms__check:is(:hover, :focus) + & {
     color: $main-color-blue;
+    cursor: pointer;
   }
 }
 

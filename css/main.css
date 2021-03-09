@@ -990,6 +990,7 @@ body {
 
 .terms__check:is(:hover, :focus) + .icon-wrapper {
   color: #2196f3;
+  cursor: pointer;
 }
 
 .terms__icon {
