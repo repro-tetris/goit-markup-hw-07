@@ -35,8 +35,7 @@
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba($black-color, 15%);
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     cursor: pointer;
   }
 }

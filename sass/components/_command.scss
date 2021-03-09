@@ -84,8 +84,7 @@
   transition: color 250ms $transition-type,
     background-color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     background-color: $main-color-blue;
     color: $white-color;
   }

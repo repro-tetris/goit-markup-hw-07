@@ -50,8 +50,7 @@
 
   transition: color 250ms $transition-type, color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     color: $main-color-blue;
   }
 }
@@ -91,10 +90,8 @@
   border-color: rgba($main-color-darkgrey, 0.2);
   transition: border-color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     border: 1px solid $main-color-blue;
-
     outline: $main-color-blue;
   }
 }
@@ -110,8 +107,7 @@
 
   transition: color 250ms $transition-type;
 
-  .modal__input:hover + &,
-  .modal__input:focus + & {
+  .modal__input:is(:hover, :focus) + & {
     color: $main-color-blue;
   }
 }
@@ -125,8 +121,7 @@
   margin-bottom: 20px;
   transition: border 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     border: 1px solid $main-color-blue;
     outline: $main-color-blue;
   }
@@ -162,8 +157,7 @@
 
   transition: color 250ms $transition-type;
 
-  .terms__check:hover + &,
-  .terms__check:focus + & {
+  .terms__check:is(:hover, :focus) + & {
     color: $main-color-blue;
   }
 }
@@ -222,8 +216,7 @@
   box-shadow: 0px 4px 4px rgba($black-color, 0.15);
   transition: background-color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     cursor: pointer;
     background-color: #188ce8;
   }

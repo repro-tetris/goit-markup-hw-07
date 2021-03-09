@@ -38,8 +38,7 @@
 
   transition: color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     color: $main-color-blue;
   }
 }
@@ -64,7 +63,6 @@
 // #region CONTACTS
 .contacts {
   display: flex;
-  // align-items: center;
   list-style: none;
 }
 
@@ -86,14 +84,12 @@
 
   transition: color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     color: $main-color-blue;
   }
 }
 
 .contacts__icon {
   margin-right: 10px;
-  // vertical-align: middle;
 }
 // #endregion

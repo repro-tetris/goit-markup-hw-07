@@ -112,7 +112,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__link:hover, .nav-list__link:focus {
+.nav-list__link:is(:hover, :focus) {
   color: #2196f3;
 }
 
@@ -162,7 +162,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__link:hover, .contacts__link:focus {
+.contacts__link:is(:hover, :focus) {
   color: #2196f3;
 }
 
@@ -208,7 +208,7 @@ body {
           box-shadow: 0 4px 4px 0 black;
 }
 
-.hero__button:hover, .hero__button:focus {
+.hero__button:is(:hover, :focus) {
   cursor: pointer;
 }
 
@@ -422,7 +422,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command__link:hover, .command__link:focus {
+.command__link:is(:hover, :focus) {
   background-color: #2196f3;
   color: #fff;
 }
@@ -474,7 +474,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:is(:hover, :focus) {
   color: #2196f3;
 }
 
@@ -510,7 +510,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link:hover, .address__link:focus {
+.address__link:is(:hover, :focus) {
   color: #2196f3;
   opacity: 1;
 }
@@ -563,7 +563,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-enjoy__link:hover, .footer-enjoy__link:focus {
+.footer-enjoy__link:is(:hover, :focus) {
   background-color: #2196f3;
 }
 
@@ -657,7 +657,7 @@ body {
   display: inline-flex;
 }
 
-.filter__item:hover, .filter__item:focus {
+.filter__item:is(:hover, :focus) {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -682,7 +682,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__btn:hover, .filter__btn:focus, .filter__btn.filter__btn--active {
+.filter__btn:is(:hover, :focus, .filter__btn--active) {
   color: #fff;
   background-color: #2196f3;
   cursor: pointer;
@@ -716,7 +716,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover, .portfolio__item:focus {
+.portfolio__item:is(:hover, :focus) {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -757,8 +757,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__overlay,
-.portfolio__item:focus .portfolio__overlay {
+.portfolio__item:is(:hover, :focus) .portfolio__overlay {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -768,7 +767,7 @@ body {
   display: block;
   text-decoration: none;
   padding: 20px 24px;
-  background-color: var(--white-color);
+  background-color: #fff;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
@@ -857,7 +856,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-btn:hover, .modal__close-btn:focus {
+.modal__close-btn:is(:hover, :focus) {
   color: #2196f3;
 }
 
@@ -903,7 +902,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:hover, .modal__input:focus {
+.modal__input:is(:hover, :focus) {
   border: 1px solid #2196f3;
   outline: #2196f3;
 }
@@ -920,8 +919,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon {
+.modal__input:is(:hover, :focus) + .modal__icon {
   color: #2196f3;
 }
 
@@ -936,7 +934,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__comment:hover, .modal__comment:focus {
+.modal__comment:is(:hover, :focus) {
   border: 1px solid #2196f3;
   outline: #2196f3;
 }
@@ -990,8 +988,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms__check:hover + .icon-wrapper,
-.terms__check:focus + .icon-wrapper {
+.terms__check:is(:hover, :focus) + .icon-wrapper {
   color: #2196f3;
 }
 
@@ -1054,7 +1051,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms__submit-btn:hover, .terms__submit-btn:focus {
+.terms__submit-btn:is(:hover, :focus) {
   cursor: pointer;
   background-color: #188ce8;
 }

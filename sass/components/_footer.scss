@@ -9,12 +9,6 @@
   align-items: baseline;
 }
 
-.footer__address {
-}
-
-.address {
-}
-
 .address__list {
   list-style: none;
 }
@@ -31,8 +25,7 @@
 
   transition: color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     color: $main-color-blue;
     opacity: 1;
   }
@@ -77,8 +70,7 @@
 
   transition: background-color 250ms $transition-type;
 
-  &:hover,
-  &:focus {
+  &:is(:hover, :focus) {
     background-color: $main-color-blue;
   }
 }
