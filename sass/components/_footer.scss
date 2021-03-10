@@ -4,9 +4,10 @@
   background-color: $bg-dark;
 }
 
-.footer .container {
+.footer--container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .address__list {
@@ -33,10 +34,6 @@
 
 .address__link--opacity06 {
   opacity: 0.6;
-}
-
-.footer-enjoy {
-  margin-left: 70px;
 }
 
 .footer-enjoy__title {
@@ -76,7 +73,7 @@
 }
 
 .footer-subscribe {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .subscribe-form {

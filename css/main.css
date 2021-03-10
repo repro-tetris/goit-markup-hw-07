@@ -41,7 +41,6 @@ body {
 
 .logo {
   display: block;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -63,13 +62,17 @@ body {
   padding: 0;
 }
 
+.logo--margin {
+  margin-right: 93px;
+}
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
 
-.header .container {
+.header--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,13 +487,16 @@ body {
   background-color: #2f303a;
 }
 
-.footer .container {
+.footer--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .address__list {
@@ -517,10 +523,6 @@ body {
 
 .address__link--opacity06 {
   opacity: 0.6;
-}
-
-.footer-enjoy {
-  margin-left: 70px;
 }
 
 .footer-enjoy__title {
@@ -565,10 +567,6 @@ body {
 
 .footer-enjoy__link:is(:hover, :focus) {
   background-color: #2196f3;
-}
-
-.footer-subscribe {
-  margin-left: 93px;
 }
 
 .subscribe-form {
