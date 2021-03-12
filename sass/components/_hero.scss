@@ -6,11 +6,8 @@
   margin: 0 auto;
   background-color: $bg-dark;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background: linear-gradient(rgba($bg-dark, 0.4), rgba($bg-dark, 0.4)),
-    url("../images/hero.jpg");
+    url("../images/hero.jpg") no-repeat center / cover;
 }
 
 .hero__title {
